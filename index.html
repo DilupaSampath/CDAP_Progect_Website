@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		select{
+			color: black;
+		}
+		button{
+			color: #fff !important;
+    background-color: #3a6277 !important;
+		}
+		.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #fff;
+    background-color: #3a6277;
+}
+		.tab-content{
+			font-family: inherit;
+    font-size: 15px;
+		}
+	img{
+		border: double;
+		max-height: 295px;
+    max-width: 489px;
+	}</style>
+  </head>
+  <body onload="hideDiv()">
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-5">
+	              <!-- Logo -->
+	              <div class="logo">
+	                 <h1> 
+						 <img src="./images/title.png" alt="" style=" height: 59px;margin-top: -3%;border: none"> <a href="index.html">Smart Scheduler</a></h1>
+						 
+	              </div>
+	           </div>
+	           <div class="col-md-5">
+	              <div class="row">
+	                <div class="col-lg-12">
+	                  <!-- <div class="input-group form">
+	                       <input type="text" class="form-control" placeholder="Search...">
+	                       <span class="input-group-btn">
+	                         <button class="btn btn-primary" type="button">Search</button>
+	                       </span>
+	                  </div> -->
+	                </div>
+	              </div>
+	           </div>
+	           <div class="col-md-2">
+	              <div class="navbar navbar-inverse" role="banner">
+	                  <!-- <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	                    <ul class="nav navbar-nav">
+	                      <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+	                        <ul class="dropdown-menu animated fadeInUp">
+	                          <li><a href="profile.html">Profile</a></li>
+	                          <li><a href="login.html">Logout</a></li>
+	                        </ul>
+	                      </li>
+	                    </ul>
+	                  </nav> -->
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+
+    <div class="page-content">
+    	<div class="row">
+		  <div class="col-md-2">
+		  	<div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li class="current"><a href="index.html"><i class="glyphicon glyphicon-home"></i> HOME</a></li>
+                    <li><a href="milestone.html"><i class="glyphicon glyphicon-calendar"></i> MILESTONE</a></li>
+                    <li><a href="documents.html"><i class="glyphicon glyphicon-stats"></i> DOCUMENTS</a></li>
+                  
+                    <li><a href="aboutUs.html"><i class="glyphicon glyphicon-pencil"></i> ABOUT US</a></li>
+                    <li><a href="contactUs.html"><i class="glyphicon glyphicon-tasks"></i>  CONTACT US</a></li>
+					<li>
+							<a href="presentations.html">
+								<i class="glyphicon glyphicon-tasks"></i>TECHNOLOGIES</a>
+						</li>
+                </ul>
+             </div>
+		  </div>
+		  <div class="col-md-10">
+		  
+		  <div class="row">
+					<div class="col-md-12">
+						<div class="content-box-large">
+		  				<div class="panel-heading" style="background: #29294ef0; color: whitesmoke ">
+							<div class="panel-title" >HOME</div>
+							
+							<div class="panel-options">
+								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+							</div>
+						</div>
+		  				<div class="panel-body">
+		  					<div id="rootwizard">
+								<div class="navbar">
+								  <div class="navbar-inner" style="    font-weight: 700;">
+								    <div class="container">
+								<ul class="nav nav-pills">
+								  	<li class="active"><a href="#tab1" data-toggle="tab">LITERATURE SURVEY</a></li>
+									<li><a href="#tab2" data-toggle="tab">RESEARCH GAP</a></li>
+									<li><a href="#tab3" data-toggle="tab">RESEARCH PROBLEM</a></li>
+									<li><a href="#tab4" data-toggle="tab">OBJECTIVES</a></li>
+									<li><a href="#tab5" data-toggle="tab">COMPARISONS</a></li>
+								</ul>
+								 </div>
+								  </div>
+								</div>
+								<div class="tab-content">
+								    <div class="tab-pane active" id="tab1">
+								      <form class="form-horizontal" role="form">
+									  
+										 <p>
+												Along with the growth of knowledge and technology large number of methods and new modules were developed not only to identify the disease, also for prediction of Dengue outbreak. A productive prediction module should be able to detect the unusual occurrences of Dengue fever and it will help to control the rise of the endemic in specified area.
+												One of the applications that use time series forecasting techniques is the system to model emergency medical system calls in Calgary, Alberta. The objective of this research was to offer simple and effective models that could be used for forecasting daily and hourly call volumes. For this they have used three main approaches, standard regression ignoring dependencies, regression models with correlated residuals, and a third approach doubly-seasonal ARIMA.
+												Several researches are made to address the same problem in Sri Lanka using Artificial Neural Networks (ANN). But none of them seems to have sufficient accuracy towards testing data. 
+												</p>
+												<p>
+														Early Warning System was developed to predict Dengue outbreaks in Sri Lanka using Neural Networks. It used regression to identify risk factors and ANN for predictions. Training accuracy for ANN model has been high for Matara (83.6%) and Colombo (89.5%). But there was a rapid decrease in testing accuracy for both Matara (62%) and Colombo (67%).
+														Ana Carvalho & Ricardo Pereira of University of Porto has done a research on management and scheduling of hospital resources. <p> The research work on focused on optimizing healthcare staff in the Pediatric Department of Prince Sultan Military Medical City (PSMMC) using GA with cost bit matrix. The main goal of their optimization was to satisfy doctors scheduling problem as much as possible while fulfilling the employers’ requirements. Their results showed that the suggested method is very useful and able to give reasonable solutions to the problem fast compared to the traditional manual methods.
+															</p>
+														Iterated Local Search is employed to get an improvement for the place resource schedule problem. Here a mathematical model is given and develop a hybrid heuristic method on the basis of resource constrained project scheduling problem and packing problem, where it is able to get an initial solution for the iterated local search by using this method. Finally, feasibility is verified with the use of simulate data.
+												</p> 
+										</form>
+								    </div>
+								    <div class="tab-pane" id="tab2">
+								      <form class="form-inline" role="form">
+							
+											<fieldset>
+													
+The existing hospital management system in IDH only has currently doesn’t contain a proper management system for its dengue patients and doctors. Not only the IDH Hospital, all the hospitals in Sri Lanka use the traditional data entering and updating systems to manage information about patients and doctors. Another problem that we observed is that the working schedules for nurses are maintained manually which leads to many difficulties since when creating schedules for nurses, factors such as the patient count and the current situation of the wards are hardly considered. The proposed system should be able to automate that task. When creating the schedules, factors such as; number of nurses , number of patients, working hours, number of wards are considered
+
+											</fieldset>
+											
+										</form>
+								    </div>
+									<div class="tab-pane" id="tab3">
+										<fieldset>
+											Research Problem
+Nonexistent of a proper systematic hospital management system.
+Patients are not allocated to the doctors systematically.
+Patients aren’t allocated to the relevant wards based on their health condition (improved or worsen).
+Working schedules of the nurses are maintained manually.
+Nurses are able to apply for leave only by considering the current situation.
+Nurses being insufficient  according to the number of patients
+											
+										</fieldset>
+								    </div>
+									<div class="tab-pane" id="tab4">
+									<div class="content-box-header panel-heading" style="background: #29294ef0; color: whitesmoke ">
+	  					<div class="panel-title ">Main Objective</div>
+						
+						<div class="panel-options">
+							<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+							<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+						</div>
+		  			</div>
+									
+										<fieldset>
+											
+				
+We aim to develop a better hospital management system for Dengue wards in IDH Hospital as per their requirement which would highly benefit the doctors and nurses and would increase their productivity in decision making. System will consist of two main components named, Optimizing component and Prediction Component where Prediction component will predict the future patient count and Optimizing Component will generate schedules and leave plans for office staff based on the output of Prediction Module. 
+We’ve implemented each model using two algorithms. We’ve conducted several tests and experiments on each model to select the best algorithm which gives best results. Most productive model will be integrated to the system.
+
+											
+										</fieldset>
+										<h3>Prediction Model</h3>
+										<ul>
+											<li>To implement a productive and accurate prediction model </li>
+											<li>Identify what are required data in order to predict patient count. </li>
+											<li>Identify what are the data sources </li>
+											<li>Identify what are the most appropriate Machine Learning algorithms and concepts to our research problem. </li>
+											<li>Use test data and check the accuracy  </li>
+										  </ul>  
+		
+										  <h3>Optimizing model</h3>
+										<ul>
+											<li>To implement a productive optimization model </li>
+											<li>Identify what are required data and data sources  </li>
+											<li>Identify most appropriate optimizing algorithms to research area </li>
+											<li>Determine what are the most important parameters which affect the output of optimizing algorithms and use them in a proper way </li>
+											<li>Use test data and check the accuracy  </li>
+										  </ul>
+										  
+										  <div class="row">
+		  		<div class="col-md-12 panel-warning">
+		  			<div class="content-box-header panel-heading" style="background: #29294ef0; color: whitesmoke ">
+	  					<div class="panel-title ">SPECIFIC OBJECTIVES</div>
+						
+						<div class="panel-options">
+							<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+							<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+						</div>
+		  			</div>
+		  			<div class="content-box-large box-with-header" style="    height: 216px;">
+			  		<div class="form-group">
+											<label style="    padding-left: 22%;padding-top: 1%;" class="col-md-4 control-label" for="select-1">Select Module</label>
+											
+											<div class="col-md-5">
+			
+												<select class="form-control" id="select-1" style="    color: black;">
+													<option>Prediction Module</option>
+													<option>Optimizing Module</option>
+													
+												</select> 
+			
+											</div><br><br><br>
+											<label style="    padding-left: 22%;padding-top: 1%;" class="col-md-4 control-label" for="select-2">Select Algorithm</label>
+											<div class="col-md-5">
+			
+												<select class="form-control" id="select-2" style="    color: black;">
+													<option>Algorithm 1</option>
+													<option>Algorithm 2</option>
+													
+												</select> 
+			
+			
+											</div>
+											<div class="col-md-7 text-center" style="    margin-top: 4%;margin-left: 23%;">
+
+											<button class="btn btn-primary" type="submit" onclick="show()">
+												<i class="fa fa-save"></i>
+												View Objective
+											</button>
+											</div>
+										</div>
+						<br /><br />
+					</div>
+		  		</div>
+		  	</div>
+			<div class="row">
+		  		
+
+		  		<div class="col-md-12" id="hiddenDiv1">
+		
+					  <div class="row" style="    font-size: 14px;">
+					  <div class="col-md-12">
+						  <div class="content-box-header" style="background: #434348f0; color: whitesmoke;">
+							  <div class="panel-title">Prediction Module - ARIMA</div>
+							
+							<div class="panel-options">
+								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+							</div>
+						  </div>
+						  <div class="content-box-large box-with-header">
+							  
+							  <p>We’ve implemented Prediction model with ARIMA and tuned it with different parameters to achieve better accuracy than RNN. Several experiments were conducted to select the most appropriate ARIMA model for further comparison with RNN.</p>
+							<br /><br />
+							<h4>ARIMA model</h4>
+							<p>Time series models are used for predicting or forecasting the future behavior of variables. These models account for the fact that data points taken over time may have an internal structure that should be accounted for. As a result, standard regression techniques cannot be applied to time series data and methodology has been developed to decompose the trend, seasonal and cyclical component of the series. Modelling the dynamic path of a variable can improve forecasts since the predictable component of the series can be projected into the future. Time Series is an ordered sequence of values, y1, y2,...,yT of a quantitative characteristic collected over time.</p>
+							<ul>
+							<li>Most often, the observations are made at regular time intervals</li>
+							<li>The essential quality of the series is the order of observations according to the time variable.</li>
+							<li>This makes it distinct from common data problems, where there is no natural ordering of the observations.</li>
+							
+							</ul>
+							<p>Time Series Analysis accounts for</p>
+							<ul>
+							
+							<li>Understanding the underlying structure that produced the observed data</li>
+							<li>Formulating a model</li>
+							<li>Proceed to forecasting</li>
+							</ul>
+							<p>There are mainly two types of time series of models.</p>
+							<ul>
+							<li>Classical Models</li>
+							<li>Probabilistic Model</li>
+							
+							</ul>
+							<p>Classical Models divided into two types.</p>
+							<ul>
+							<li>Additive Models</li>
+							<li>Multiplicative Models</li>
+							
+							</ul>
+							<h5>Preparing the data set</h5>
+							<p>Data preparation consists of three levels.</p>
+							<u>Level 1</u>
+							<p>Divide data into two sections as “training set” and ”testing set”. Fit the model using training set and test the model using testing set.</p>
+							<p>The training set should be 60 percent of the data set and the test set should be 40 percent of the data set.</p>
+							<u>Level 2</u>
+							<p>In this level we mainly focus on grouping the data set under week and grouping the result again under city. There columns in the data set is mentioned below. Fields [ ‘patient_name’,’race’,’gender’,’age’,’level’,’date’,’ward’,’district’,’city’,’address’,’disease’ ]
+First we have to filter the data set and only retrieve the data of dengue patients.</p>
+<u>Level 3</u>
+<p>In this level, data is analysed to conclude whether it is stationary or not. To fit to a time series model, the data should be stationary.
+A stationary series is roughly horizontal, variance constant, no patterns predictable in the long	</p>
+<h5>Implementation of ARIMA model</h5>
+<p>The parameter selection of the ARIMA model was done by grid search. The goal was to find the optimal set of parameters that yields the best performance for our model.</p>
+<p>Using same method, RMSE, Elapsed Time, r2 Score, MAE Value are found. The model which returned the lowest error was taken as the best ARIMA model.</p>
+						</div>
+					  </div>
+					  </div>
+					 
+					  <div class="col-md-12" >
+						<div class="content-box-header" style="background: #434348f0; color: whitesmoke;">
+							<div class="panel-title">Prediction Module - ARIMA - Results</div>
+						  
+						  <div class="panel-options">
+							  <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+							  <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+						  </div>
+						</div>
+						<div class="content-box-large box-with-header">
+					
+							<div class="row">
+								<div class="col-md-6">
+										<img src="./images/arima1.jpg" alt="">
+									
+								</div>
+								<div class="col-md-6">
+										<img src="./images/arima2.jpg" alt="">	
+																		</div>
+							</div>
+							
+						   
+						  <br /><br />
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-12" id="hiddenDiv2"  style="    font-size: 14px;">
+		  			<div class="row" >
+		  				<div class="col-md-12">
+		  					<div class="content-box-header" style="background: #434348f0; color: whitesmoke;">
+			  					<div class="panel-title">Prediction Module - Using RNN with LSTM</div>
+								
+								<div class="panel-options">
+									<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+									<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+								</div>
+				  			</div>
+							
+				  			<div class="content-box-large box-with-header">
+							  <p>Objective of implementing prediction model with RNN is to make predictions with better accuracy than the ARIMA model. </p>
+							  <p>We’ve used RNN with LSTM to implement the model and several experiments were conducted to select best RNN model and compare it with ARIMA model.</p>	
+					  		
+								<br /><br />
+								<h4>RNN model</h4>
+							<p>Recurrent Neural Network with Long Short-Term memory is used to develop the model. Designing process was carried out through four stages as follows, Data Preparation, Model Development, Model Forecast and Model evaluation.</p>
+		<br /><br />
+	<h5>Data Preparation</h5>						
+						<p>
+						First step is to convert time series dataset into supervised learning problem. Sliding Window method is used to conversion and size of the lag is 1.Last step is to transform data set into preferred scale. Hyperbolic tangent (tanh) is set as the Activation Function of LSTM which expect all the data must be in the range of [-1, 1].
+Model Development: Keras library is used to implement RNN model and TensorFlow library is selected as the back end of Keras.We’ve set “stateful” argument to “True” since it enables trained model to remember and learn over long sequences. Performance of LSTM is highly dependable on three parameters.</p>	
+						<ul>
+						<li>epochs : How many times the network should be scanned repeatedly</li>
+						<li>batch_size: dataset should be divided into sub parts, since network can’t handle entire dataset at once. batch_size refers to the size of a sub set of data</li>
+						<li>pneurons : define the number of neurons network should have parameters were set as follows in the beginning</li>
+						<li>epochs – 3000, batch_size – 1, neurons -4</li>
+						<br><br>
+						<p>Then model tuning process was started by changing parameters. Efficiency and accuracy of the model was stable when number of neurons is 1 and number of epochs is 10.
+10 models were developed under the conditions obtained from model tuning process. “mean_squared_error” was passed as the loss function and Adam algorithm was used as the optimizing method to train the model.</p>
+</ul>						
+							</div>
+
+						  </div>
+				</div>
+			
+			
+						  <div class="col-md-12">
+							<div class="content-box-header" style="background: #434348f0; color: whitesmoke;">
+								<div class="panel-title">Prediction Module - Using RNN with LSTM-Results</div>
+							  
+							  <div class="panel-options">
+								  <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+								  <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+							  </div>
+							</div>
+							<div class="content-box-large box-with-header">
+								
+								<div class="row">
+										<div class="col-md-6">
+												<img src="./images/rnn1.jpg" alt="">
+										</div>
+										<div class="col-md-6">
+												<img src="./images/rnn2.jpg" alt="">
+																				</div>
+									</div>
+							   
+							  <br /><br />
+						  </div>
+					  </div>
+					</div>
+		  			<div class="row" id="hiddenDiv3"  style="    font-size: 14px;">
+		  				<div class="col-md-12">
+		  					<div class="content-box-header" style="background: #434348f0; color: whitesmoke;">
+			  					<div class="panel-title">Optimizing Module - Genatic</div>
+								
+								<div class="panel-options">
+									<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+									<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+								</div>
+				  			</div>
+				  			<div class="content-box-large box-with-header">
+				  				
+					  			<p>IDH hospital currently uses a non-optimal nurse allocation platform where nurses are allocated to different wards inefficiently and randomly and the schedules were generated in a slower rate. Research area includes to generate schedules efficiently and faster compared to the ILS approach using real data sets. Following are the goals achieved by resolving the issues faced by the hospital related to optimization</p>
+								<br /><br />
+								<ul>
+									<li>Generate optimal working schedules for nurses</li>
+									<li>Suggest leave plans for nurses according to the existing number of patients and the predicted
+										patient count for a particular period of time.</li>
+									<li>Generate a report which provides the minimum number of nurses that should be available for a
+										particular period of time.</li>
+								  </ul>  
+								  <h4>Genetic Algorithm</h4>
+								  <p>Genetic algorithm is a search heuristic that is based on Charles Darwin’s theory of natural evolution. This algorithm reflects the procedure of natural selection where the fittest individuals are selected for reproduction to produce offspring of the next generation. Simply it chooses individuals from the current population and uses them as parents to produce the children for the next generation. Over succeeding generations, the population evolves towards an optimal solution.</p>
+							<p>To achieve the optimization of healthcare staff scheduling, we picked genetic algorithm because;</p>
+							<ul>
+							<li>Compared to a classical optimizing algorithm, genetic algorithm generates a population of points at each iteration and the best point in a population is generated as the optimal 
+solution while a classical optimizing algorithm generates a single point at each iteration, and sequence of points are generated as an optimal solution.</li>
+							<li>Faster and more efficient as compared to the classical traditional algorithms.</li>
+							<li>Gets an answer to the problem at all times, which improves over the time.</li>
+							<li>Useful when the search space is bulky and when a large number of parameters are involved.</li>
+
+							
+							</ul>
+<p>Our GAs driven trough under five key steps</p>
+<ul>
+<li>Generate an initial population F(0) with n solutions</li>
+<li>Compute the fitness value u(f) for each individual solution f in the current population F(t)</li>
+<li>Generate the next population F(t+1), by selecting i best solutions from F(t)</li>
+<li>Produce offspring by applying the genetic operators to population F(t+1)</li>
+<li>Repeat from Step 2 until a satisfying solution.The process is continued until x number of generations are explored and the best solution (the solution with minimum fitness value) is selected as the optimal number of nurses for wards.	</li>
+</ul>
+							</div>
+						  </div>
+						  <div class="col-md-12">
+								<div class="content-box-header" style="background: #434348f0; color: whitesmoke;">
+									<div class="panel-title">Optimizing Module - Genatc -Results</div>
+								  
+								  <div class="panel-options">
+									  <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+									  <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+								  </div>
+								</div>
+								<div class="content-box-large box-with-header">
+									
+									<div class="row">
+											<div class="col-md-6">
+													<img src="./images/meth1.png" alt="">
+											</div>
+											<div class="col-md-6">
+													<img src="./images/meth2.png" alt="">
+																					</div>
+										</div>
+								   
+								  <br /><br />
+							  </div>
+						  </div>
+		  			</div>
+					<div class="row" id="hiddenDiv4"  style="    font-size: 14px;">
+		  				<div class="col-md-12">
+		  					<div class="content-box-header" style="background: #434348f0; color: whitesmoke;">
+			  					<div class="panel-title">Optimizing Module - Iterative</div>
+								
+								<div class="panel-options">
+									<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+									<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+								</div>
+				  			</div>
+				  			<div class="content-box-large box-with-header">
+							<p>Algorithm
+									Instead of generating nurses schedules manually, “Smart Scheduler” is able to automate the
+									generating of nurses schedules by considering the factors; Total number of nurses in the hospital,
+									Total number of patients in the hospital, Future Patient count in a ward and whether nurse is an
+									OT or a normal shift nurse. Other benefits achieved from “Smart Scheduler”;</p>
+								<br /><br />
+				  				<h4>Iterated Local Search</h4>
+								<p>Iterated Local Search is more effective and quickly explore the optimal solutions and it is able to find a highly accurate optimum by using a few number of iterations. This algorithm is able to keep track on its current state (current solution) and move to neighboring states (neighborhood) with the results of current state. Then it will repeat the same process if the neighboring state get better than the current state until it gets the best solution.</p>
+					  			
+								<ul>
+									<li>Algorithm can return a schedule in few seconds</li>
+									<li>Nurses are able to apply for leaves</li>
+									<li>Easy to have an idea of free nurses</li>
+								  </ul> 
+								<h5>collecting data</h5>
+								<p>For the purpose of this research to optimize the scheduling of the hospital staff, interviews and discussions with the nurses and doctors were held. Personal interviews and telephone discussions with the hospital staff were made to gather the monthly patient and nurse data, ward details of IDH hospital.
+Additionally, personal discussions and interviews with doctors and nurses outside of the IDH hospital were held to analyze the collected data for scheduling purposes.</p>
+							<h5>Application of ILS algorithm</h5>
+							<p>Iterated Local Search algorithm is used to allocate nurses to wards in an efficient way by considering two main factors such as;</p>
+							<ul>
+							<li>Number of patients in a ward</li>
+							<li>Number of nurses in the hospital</li>
+							
+							</ul>
+							<p>The ILS starts with an initial solution. We have used two approaches to generate the initial solution: (1) best fit and (2) random fit. In the best fit approach, the nurses are allocated to wards according to the requirement of each ward (number of nurses required by each ward). Wards are considered sequentially (by the ward number), and nurses are allocated starting from first wards, second ward etc. Therefore, the last wards might not get nurses allocated at all. On the other hand, with the random fit approach, the nurses are allocated to wards randomly, without considering any factors.
+Next, the initial solution goes through a perturbation process to generate a new solution. In the perturbation process, each nurse is selected sequentially and moved from the allocated ward to another ward. Each of this move generates a new solution.
+Each new solution will be evaluated using the heurist function. We have used the previously mentioned fitness function as the heuristic function for ILS. If the new solution gives a better fitness value, then the old solution is discarded, and new solution is considered as the current solution.
+23
+The process is continued until x number of iterations are explored and the best Solution (the solution with minimum fitness value) is selected as the number of tourists that can be accommodated for each location.</p>
+							</div>
+						  </div>
+						  <div class="col-md-12">
+								<div class="content-box-header" style="background: #434348f0; color: whitesmoke;">
+									<div class="panel-title">Optimizing Module - Iterative -Results</div>
+								  
+								  <div class="panel-options">
+									  <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+									  <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+								  </div>
+								</div>
+								<div class="content-box-large box-with-header">
+									
+									<div class="row">
+											<div class="col-md-6">
+													<img src="./images/kas1.png" alt="">
+											</div>
+											<div class="col-md-6">
+												
+																					</div>
+										</div>
+								   
+								  <br /><br />
+							  </div>
+						  </div>
+					  </div>
+					  
+		  	
+		  	</div>
+
+										  
+										  
+										  
+									</div>
+									
+									
+									
+									
+									<div class="tab-pane" id="tab5">
+											<fieldset>
+																									
+											
+											<h3>Prediction Model</h3>
+											<p style="width:89%">
+		We compared both prediction models considering accuracy and time taken to train both models. 
+		According to our test results we’ve came to the conclusion that RNN with LSTM gives better accuracy than ARIMA.
+										</p>
+											<div class="container">
+												<div class="row" style="width: 90%;">
+													<div class="col-md-6">
+
+															<img src="./images/cmp/pred1.png" alt="">
+															
+													</div>
+													<div class="col-md-6">
+															
+															<img src="./images/cmp/pred2.png" alt="">
+																												</div>
+												</div>
+											</div>
+										
+											  <h3>Optimizing model</h3>
+											 <p style="width:89%">We have conducted experiments to measure the performances of our optimization algorithms using the statistics collected from IDH. With the real data sets, our results show that, GA and ILS can decide the optimal allocations dynamically in the order of seconds. Also, the results show that the GA approach is much efficient and faster than the ILS approach.</p> 
+											 <div class="container">
+													<div class="row" style="width: 90%;">
+														<div class="col-md-6">
+	
+																<img src="./images/cmp/opt1.png" alt="">
+																
+														</div>
+														<div class="col-md-6">
+																
+																<img src="./images/cmp/opt2.png" alt="">
+																													</div>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									<ul class="pager wizard">
+										<li class="previous first disabled" style="display:none;"><a href="javascript:void(0);">First</a></li>
+										<li class="previous disabled"><a href="#tab2">Previous</a></li>
+										<li class="next last" style="display:none;"><a href="javascript:void(0);">Last</a></li>
+									  	<li class="next"><a href="javascript:void(0);">Next</a></li>
+									</ul>
+								</div>	
+							</div>
+		  				</div>
+		  			</div>
+					</div>
+				</div>
+
+		  
+		  
+		  	
+
+		  	
+			<!-- start -->
+			
+
+		  	
+		  </div>
+		</div>
+    </div>
+
+    <footer>
+			<div class="container">
+			
+			   <div class="copy text-center">
+				  Copyright 2018 <a href='#'>Smart Scheduler</a>
+			   </div>
+			   
+			</div>
+		 </footer>
+	  
+
+			<SCRIPT> 	
+	function show() {
+	var s1 = document.getElementById("select-1").value;
+	var s2 = document.getElementById("select-2").value;
+console.log(s1);
+console.log(s1);
+	var hiddenDiv1 = document.getElementById("hiddenDiv1");
+	var hiddenDiv2 = document.getElementById("hiddenDiv2");
+	var hiddenDiv3 = document.getElementById("hiddenDiv3");
+	var hiddenDiv4 = document.getElementById("hiddenDiv4");
+
+
+	    if (s1 == "Prediction Module" &&  s2=="Algorithm 1") {
+		    hiddenDiv1.style.visibility='visible';
+			hiddenDiv1.style.display='block';
+			
+			hiddenDiv2.style.visibility='hidden';
+			hiddenDiv2.style.display='none';
+			
+			hiddenDiv3.style.visibility='hidden';
+			hiddenDiv3.style.display='none';
+			
+			hiddenDiv4.style.visibility='hidden';
+			hiddenDiv4.style.display='none';
+		} 
+		else 	    if (s1 == "Prediction Module" &&  s2=="Algorithm 2") {
+		    hiddenDiv2.style.visibility='visible';
+			hiddenDiv2.style.display='block';
+			
+			hiddenDiv1.style.visibility='hidden';
+			hiddenDiv1.style.display='none';
+			
+			hiddenDiv3.style.visibility='hidden';
+			hiddenDiv3.style.display='none';
+			
+			hiddenDiv4.style.visibility='hidden';
+			hiddenDiv4.style.display='none';
+		} else 	    if (s1 == "Optimizing Module" &&  s2=="Algorithm 1") {
+		    hiddenDiv3.style.visibility='visible';
+			hiddenDiv3.style.display='block';
+			
+			hiddenDiv2.style.visibility='hidden';
+			hiddenDiv2.style.display='none';
+			
+			hiddenDiv1.style.visibility='hidden';
+			hiddenDiv1.style.display='none';
+			
+			hiddenDiv4.style.visibility='hidden';
+			hiddenDiv4.style.display='none';
+		} else 	    if (s1 == "Optimizing Module" &&  s2=="Algorithm 2") {
+		   hiddenDiv4.style.visibility='visible';
+			hiddenDiv4.style.display='block';
+			
+			hiddenDiv2.style.visibility='hidden';
+			hiddenDiv2.style.display='none';
+			
+			hiddenDiv3.style.visibility='hidden';
+			hiddenDiv3.style.display='none';
+			
+			hiddenDiv1.style.visibility='hidden';
+			hiddenDiv1.style.display='none';
+		} 
+	}	
+	function hideDiv(){
+		document.getElementById("hiddenDiv1").style.display = 'none';
+		document.getElementById("hiddenDiv2").style.display = 'none';
+		document.getElementById("hiddenDiv3").style.display = 'none';
+		document.getElementById("hiddenDiv4").style.display = 'none';
+
+	}
+</SCRIPT>  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
